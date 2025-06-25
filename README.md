@@ -1,0 +1,9 @@
+This is a lightweight Flask web application designed to implement secure user authentication with features like registration, login, and logout. It utilizes core Flask extensions such as Flask-Login for session management and Flask-SQLAlchemy for database interactions with SQLite. User passwords are securely hashed using Werkzeug to enhance data protection and authentication integrity. The application includes simple, clean HTML templates with optional Bootstrap styling to ensure a responsive and user-friendly interface.
+
+The app is structured for clarity and ease of use, making it suitable for beginners learning Flask as well as developers looking to quickly prototype authentication workflows. Flash messages provide real-time user feedback during registration, login failures, and successful logouts. The application also uses route protection decorators like @login_required to ensure access control across pages.
+
+You can run the app locally by cloning the repository, setting up a Python virtual environment, installing the required packages from requirements.txt, and running the Flask app. For a more consistent and portable deployment, the project includes a Dockerfile that enables containerization. With Docker installed, you can build the image using docker build -t flask-auth-app . and run it with docker run -p 5000:5000 flask-auth-app, making the app accessible at http://localhost:5000.
+
+The project structure includes essential files like app.py, requirements.txt, and a templates/ directory for HTML pages. It follows clean architecture principles, making it easy to expand with additional features such as email verification or password resets.
+
+This application is open-source and available under the MIT License. Whether you're building a new project or learning Flask, this app provides a secure, simple starting point for implementing user login systems.
